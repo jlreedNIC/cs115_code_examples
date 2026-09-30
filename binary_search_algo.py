@@ -24,4 +24,6 @@ while low_idx <= high_idx: # correct algorithm
     else:
         high_idx = mid_idx - 1
 
-# print(f'{value} was found at position {mid_idx}')
+# if low index is greater than high index, the value wasn't found
+if low_idx > high_idx:
+    print(f'{value} not found')
